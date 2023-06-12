@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Page</title>
+</head>
+<body>
+    <div id="div1">
+        <p style="color: green;">Lorem ipsum dolor si exercitationem sunt, est, repudiandae pariatur? Facere.</p>
+        <button onclick="myfun('div1')">Print div1</button>
+    </div>
+    <div id="div2">
+        <p style="color: red;">Lorem ipsum dolor si exercitationem sunt, est, repudiandae pariatur? Facere.</p>
+        <button onclick="myfun('div2')">Print div2</button>
+    </div>
+    <div id="div3">
+        <p style="color:purple;">Lorem ipsum dolor si exercitationem sunt, est, repudiandae pariatur? Facere.</p>
+        <button onclick="myfun('div3')">Print div3</button>
+    </div>
+    
+        <button onclick="wholepage()"style="color:blue;">Print All</button>
+    
+    <script type="text/javascript">
+        function wholepage(){
+            window.print();
+        }
+        function myfun(paravalue){
+            var backup=document.body.innerHTML;
+            var content=document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML=content;
+            window.print();
+            document.body.innerHTML=backup;
+
+
+        }
+    </script>
+    
+</body>
+</html>
