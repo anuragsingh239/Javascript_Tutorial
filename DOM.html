@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="anurag"> My name is anurag</p>
+    <p class="anurag"> My name is anurag Singh</p>
+    <p class="anurag"> My name is  Singh</p>
+    <!-- <p class="anurag"> My name is anurag Singh</p> -->
+    <ul><li>Good</li>
+        <li>Bad</li>
+        <li>Not say</li></ul>
+    <script>
+        
+        // var a=document.getElementById("anurag").innerHTML;
+        // document.write(a);
+        // var b=document.getElementsByClassName("anurag").innerHTML[0];
+        // document.write(b);
+        var child=document.body.children;
+        console.log(child);
+        var para=document.createElement("p");
+        var textnode=document.createTextNode("This is new para");
+        para.appendChild(textnode);
+        console.log(para);
+        document.body.appendChild(para);
+        // access first and lastchild
+        var list=document.querySelector("ul");
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+        var fs=anurag.nextElementSibling;
+        console.log(fs)
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation </title>
+</head>
+<body>
+    <script>
+        function myfun(){
+            var userconfirm=confirm("Do you to visit facebook !!");
+            if(userconfirm==true){
+                window.open("https://www.facebook.com/");
+                return true;
+            }
+            else{
+                document.write("You don't want to visit facebook.");
+            }
+        }
+       
+    </script>
+    <h1>Want to visit Facebook</h1>
+     <input type="button" name="button" onclick="myfun()" value="Click Me">
+</body>
+</html>
