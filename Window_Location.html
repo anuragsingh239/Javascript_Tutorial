@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Location</title>
 </head>
 <body>
+    <button onclick="myfunc()" style="color:green;background-color:Yellow";>Youtube</button>
+    <br>
+    <script type="text/javascript">
+            document.write(window.location.href);
+            document.write("<br>");
+            document.write(window.location.hostname);
+            document.write("<br>");
+            document.write(window.location.pathname);
+            document.write("<br>");
+            document.write(window.location.protocol);
+        function myfunc(){
+            window.open("https://www.youtube.com/");
+            // window.location="https://www.youtube.com/";
+        }
+    </script>
     
 </body>
 </html>
