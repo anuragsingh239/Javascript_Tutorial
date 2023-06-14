@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body style="background-color: aqua;">
+    <p id="clock"></p>
+    <button onclick="clearInterval(clock)">STOP</button>
+    <script type="text/javascript">
+        var clock=setInterval(showclock,1000);
+        function showclock(){
+            var d=new Date();
+            var anurag=d.toLocaleTimeString();
+            document.getElementById("clock").innerHTML=anurag;
+        }
+    </script>
+    
+</body>
+</html>
