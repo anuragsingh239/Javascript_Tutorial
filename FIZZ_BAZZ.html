@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="myfunc()">Check</button> -->
+    <script>
+    //   function  myfunc(){
+        var i=1;
+        while(i<=100){
+            if(i%15==0){
+                document.write("FIZZBAZZ"+"\t");
+                
+            }
+            else if(i%3==0){
+                document.write("FIZZ"+"\t");
+            }
+            else if(i%5==0){
+                document.write("BAZZ"+"\t");
+            }
+            else{
+                document.write(i+"\t");
+                
+            }
+            i++;
+        }
+    // }
+    </script>
+    
+</body>
+</html>
