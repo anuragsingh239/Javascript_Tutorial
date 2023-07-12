@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const func2 =()=>{
+            setTimeout(()=>{    
+                console.log("my fun 2")
+            },3000);
+        }
+        const fun1=()=>{
+            console.log("my fun 1");
+            func2();
+            console.log("my fun 1 second time");
+        }
+        fun1();
+    </script>
+</body>
+</html>
