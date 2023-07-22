@@ -1,0 +1,23 @@
+<script>
+const objPromise=new Promise((resolve,reject)=>{
+    let roll=[1,2,3,4,5];
+    setTimeout(()=>{
+        // resolve(roll);
+        reject('can not connect');
+    },2000);
+   
+})
+objPromise.then((rollnumber)=>{
+    console.log(rollnumber);
+}).catch((error)=>{
+    console.log(error);
+})
+
+
+
+
+
+
+
+
+</script>
